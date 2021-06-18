@@ -4,7 +4,7 @@ domimpl = xml.dom.minidom.getDOMImplementation()
 
 import sys
 import string
-from six.moves import urllib
+import urllib.parse
 from io import StringIO
 
 from . import utils

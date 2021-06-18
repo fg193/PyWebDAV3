@@ -1,6 +1,7 @@
 from __future__ import absolute_import
 from __future__ import print_function
-from six.moves.configparser import SafeConfigParser
+from configparser import SafeConfigParser
+
 
 class Configuration:
     def __init__(self, fileName):

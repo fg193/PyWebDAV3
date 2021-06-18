@@ -1,24 +1,20 @@
 from __future__ import absolute_import
 import os
-import textwrap
-import six
 import logging
-import types
 import shutil
+import textwrap
+import types
+import urllib.parse
 from io import StringIO
-from six.moves import urllib
+from html import escape
 from pywebdav.lib.constants import COLLECTION, OBJECT
 from pywebdav.lib.errors import *
 from pywebdav.lib.iface import *
 from pywebdav.lib.davcmd import copyone, copytree, moveone, movetree, delone, deltree
-if six.PY2:
-    from cgi import escape
-else:
-    from html import escape
 
 log = logging.getLogger(__name__)
 
-BUFFER_SIZE = 128 * 1000 
+BUFFER_SIZE = 128 * 1000
 # include magic support to correctly determine mimetypes
 MAGIC_AVAILABLE = False
 try:

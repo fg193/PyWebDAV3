@@ -46,8 +46,7 @@ or send an email to the maintainer.
 REQUIREMENTS
 ------------
 
-- Python 2.7  or higher (www.python.org)
-- PyXML 0.66 (pyxml.sourceforge.net)
+- Python 3
 
 
 LICENSE
@@ -91,6 +90,6 @@ NOTES
 -----
 
 Look inside the file doc/TODO for things which needs to be done and may be done
-in the near future. 
+in the near future.
 
 Have a look at doc/ARCHITECTURE to understand what's going on under the hood

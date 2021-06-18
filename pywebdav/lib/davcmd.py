@@ -9,12 +9,11 @@ resources and collections
 """
 
 from __future__ import absolute_import
-from six.moves import urllib
+import os
+import urllib.parse
 
 from .utils import create_treelist, is_prefix
 from .errors import *
-from six.moves import range
-import os
 
 def deltree(dc,uri,exclude={}):
     """ delete a tree of resources
